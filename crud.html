@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_OPERATION</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+       <table>
+        <tr>
+            <td>
+                <!-- form for input the values -->
+                <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit()">
+                    <div>
+                        <label>Product Code</label>
+                        <input type="text" name="prodCode" id="prodCode">
+                    </div>
+                    <div>
+                        <label>Product Name</label>
+                        <input type="text" name="prodname" id="prodname">
+                    </div>
+                    <div>
+                        <label>Quantity</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" name="" value="submit" id="btn">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="values">
+                    <thead>
+                        <tr>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                        
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+       </table>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
